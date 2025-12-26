@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Настройки магазина</h1>
+    <form>
+        <label>Название магазина:</label><br>
+        <input type="text" value="{{ config.name }}"><br><br>
+        <label>Валюта:</label><br>
+        <select>
+            <option>RUB</option>
+            <option>USD</option>
+        </select><br><br>
+        <button type="button">Сохранить изменения</button>
+    </form>
+{% endblock %}
